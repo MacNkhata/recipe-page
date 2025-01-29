@@ -24,3 +24,79 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.omelette-img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.container {
+  padding: 32px;
+}
+
+.container h1 {
+  font-family: young;
+  margin-bottom: 24px;
+}
+
+.recipe-description {
+  font-family: outfit;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--stone-600);
+  margin-bottom: 32px;
+}
+
+.overview {
+  background-color: var(--rose-50);
+  padding: 32px;
+  border-radius: 12px;
+  font-family: outfit;
+}
+
+.overview-heading {
+  color: var(--rose-800);
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.overview-list {
+  color: var(--stone-600);
+  list-style: square;
+  list-style-position: outside;
+  font-size: 1rem;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.overview-list li {
+  padding-left: 1rem;
+}
+
+.overview-list li::marker {
+  color: var(--rose-800);
+  font-size: 0.7rem;
+  white-space: wrap;
+}
+
+/* .overview-list li .list-text {
+  position: relative;
+  left: 40px;
+} */
