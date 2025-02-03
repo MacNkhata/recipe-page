@@ -159,6 +159,11 @@ hr {
   border-bottom: 1px solid var(--stone-150);
 }
 
+.nutrition .content {
+  color: var(--brown-800);
+  font-weight: 500;
+}
+
 footer {
   margin: 16px;
   font-family: outfit;
@@ -167,4 +172,43 @@ footer {
 footer .attribution a {
   color: var(--brown-800);
   text-decoration: none;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  main {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .omelette-img {
+    margin-top: 24px;
+    width: 100%;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  main {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  .omelette-img {
+    margin-top: 24px;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .container h1 {
+    font-family: young;
+    font-size: 3rem;
+    margin-bottom: 24px;
+  }
 }
