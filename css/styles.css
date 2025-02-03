@@ -81,6 +81,7 @@ main {
   list-style-position: outside;
   font-size: 1rem;
   padding-left: 16px;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -94,4 +95,76 @@ main {
   color: var(--rose-800);
   font-size: 0.7rem;
   white-space: wrap;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  margin-top: 32px;
+}
+
+.ingredients h3,
+.instructions h3,
+.nutrition h3 {
+  font-family: young;
+  font-size: 1.5rem;
+  color: var(--brown-800);
+  margin-bottom: 18px;
+}
+
+.ingredients ul,
+.instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: outfit;
+  color: var(--stone-600);
+  padding-left: 16px;
+  list-style-position: outside;
+  font-weight: 300;
+}
+
+hr {
+  margin: 24px 0;
+  width: 100%;
+  border: 0.5px solid var(--stone-150);
+}
+
+.ingredients li,
+.instructions li {
+  padding-left: 16px;
+}
+
+.ingredients li::marker,
+.instructions li::marker {
+  color: var(--brown-800);
+}
+
+.nutrition p,
+.nutrition table {
+  font-family: outfit;
+  font-weight: 300;
+}
+
+.nutrition table {
+  margin-top: 16px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition table tr td {
+  padding: 8px;
+  font-family: 1rem;
+  font-weight: 300;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+footer {
+  margin: 16px;
+  font-family: outfit;
+}
+
+footer .attribution a {
+  color: var(--brown-800);
+  text-decoration: none;
 }
